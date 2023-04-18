@@ -1,4 +1,7 @@
- const fs = require('fs');
+//refer to reaadStarter.txt file from where this code is reading the data 
+
+
+const fs = require('fs');
 
 //always be sure to include the correct file path :
 fs.readFile('C:\\Node Js course\\reaadStarter.txt',(err,data)=>{
