@@ -1,4 +1,7 @@
- const fs = require('fs');
+//Refer to renamingWriteFile.txt 
+
+
+const fs = require('fs');
  const path = require('path');
 
  //Code 1 : WRITING A FILE
