@@ -44,6 +44,17 @@ process.on('uncaughtException',err=>{
     process.exit(1);
 })
 
+
+
+//Ex-3 using path core module instead of writing the path address manually
+const fs = require ('fs');
+const path = require ('path');
+
+fs.readFile(path.join(__dirname,'reaadStarter.txt'),'utf-8',(err,data)=>{
+    if(err)throw err;
+    console.log(data);
+})
+
 /*The first line of the code const fs = require('fs'); imports the fs module from the Node.js core library. This module provides an API for interacting with the file system.
 
 The second line of the code uses the readFile method from the fs module to asynchronously read the contents of a file. The first argument to this method is the path to the file that you want to read. In this case, it’s 'C:\\Node Js course\\reaadStarter.txt'. The second argument is the encoding that should be used when reading the file. In this case, it’s 'utf-8', which means that the contents of the file will be interpreted as a UTF-8 encoded string.
